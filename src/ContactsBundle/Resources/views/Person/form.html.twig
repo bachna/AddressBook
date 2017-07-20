@@ -1,0 +1,39 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+    <form class="ui left aligned container form">
+        <div class="ui divider"></div>
+        <div class="field">
+            <label>* Name</label>
+            <input type="text" name="name" placeholder="Type name">
+        </div>
+        <div class="field">
+            <label>* Surname</label>
+            <input type="text" name="surname" placeholder="Type surname">
+        </div>
+        <div class="field">
+            <label>Description</label>
+            <textarea name="description"></textarea>
+        </div>
+        <div class="field left aligned">
+            <label>Street</label>
+            <input type="text" name="street" placeholder="Type street">
+        </div>
+        <div class="field left aligned">
+            <label>Postal code</label>
+            <input type="text" name="postal_code" placeholder="Type postal code">
+        </div>
+        <div class="field left aligned">
+            <label>City</label>
+            <input type="text" name="city" placeholder="Type city">
+        </div>
+        <div class="field">
+            <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>I agree to the Terms and Conditions</label>
+            </div>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+    </form>
+{% endblock %}
+

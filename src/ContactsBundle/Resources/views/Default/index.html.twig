@@ -1,0 +1,18 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+    <div class="ui left aligned container category search">
+        <div class="ui icon input">
+            <input class="prompt" type="text" placeholder="Search by surname...">
+            <i class="search icon"></i>
+        </div>
+        <div class="results"></div>
+    </div>
+    <div>
+        <a href="{{ path("frm") }}" class="ui right floated button">
+            <i class="icon user"></i>
+            Add person
+        </a>
+    </div>
+    <button class="ui right floated button"> Show groups </button>
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %} Address Book {% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('/semantic/semantic.css') }}" rel="stylesheet"/>
+        {% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('/semantic/semantic.js') }}"></script>
+        {% endblock %}
+    </head>
+    <body>
+        <div class="ui center aligned container">
+            <div class="ui grid">
+                <div class="four wide column"></div>
+                <div class="eight wide column">
+                    <p>
+                    <h1> Address Book </h1><br>
+                    </p>
+                    {% block body %}{% endblock %}
+                </div>
+                <div class="four wide column"></div>
+            </div>
+        </div>
+    </body>
+</html>
+
