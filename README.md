@@ -21,5 +21,5 @@ Aplication for contacts storing.
     
 Homepage | Add person
 ------------ | -------------
-![AddressBook Homepage](/printscreens/Zrzut ekranu z 2017-07-25 15-07-17.png | ![IndexCards Add person](/printscreens/Zrzut ekranu z 2017-07-25 15-07-24.png) 
+![AddressBook Homepage](/printscreens/AB_Homepage.png | ![IndexCards Add person](/printscreens/AB_AddPerson.png) 
 
