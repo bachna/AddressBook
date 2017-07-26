@@ -5,22 +5,23 @@
         <title>{% block title %} Address Book {% endblock %}</title>
         {% block stylesheets %}
             <link href="{{ asset('/semantic/semantic.css') }}" rel="stylesheet"/>
+            <link href="{{ asset('/css/AB_style.css') }}" rel="stylesheet"/>
         {% endblock %}
         {% block javascripts %}
             <script src="{{ asset('/semantic/semantic.js') }}"></script>
         {% endblock %}
     </head>
-    <body>
+    <body style="background-image:url('{{ asset('/images/AB_tlo.jpg') }}')">
         <div class="ui center aligned container">
             <div class="ui grid">
-                <div class="four wide column"></div>
-                <div class="eight wide column">
-                    <p>
-                    <h1> Address Book </h1><br>
-                    </p>
-                    {% block body %}{% endblock %}
-                </div>
-                <div class="four wide column"></div>
+                <div class="three wide column"></div>
+                    <div class="ten wide column apla">
+                        <p>
+                            <h1> Address Book </h1><br>
+                        </p>
+                        {% block body %}{% endblock %}
+                    </div>
+                <div class="three wide column"></div>
             </div>
         </div>
     </body>
